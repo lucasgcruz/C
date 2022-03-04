@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 #define ex01
 
 #ifdef ex01
@@ -11,7 +13,7 @@
 
 int mult, limite, numatual, i;
 
-main() {
+int main() {
 printf("Neste programa voce devera informar 2 numeros inteiros.\n");
 printf("O primeiro numero sera o numero multiplicado e o segundo numero sera o limite.\n");
 printf("Apos isso o programa ira mostrar o menor multiplo do primeiro numero maior que o segundo numero.\n");

@@ -1,25 +1,5 @@
-/*
-
-			EXERCICIOS
-
-*****************************************************************************
-OBS.: Todos os programa devem ser finalizados pelo usuario.
-
-
-
-
-
-
-4 - Receba via teclado dez valores inteiros e ordene por ordem crescente assim
-    que sao digitados. Guarde-os em um vetor. Mostre ao final os valores ordenados.
-
-5 - Defina 2 vetores bidimensionais do tipo inteiro de 2x3. Escreva um programa
-    que recebe os dados via teclado para esses 2 vetores. Usando o operador
-    subtracao "-", subtraia os elementos de mesmo indice dos 2 vetores
-    e guarde o resultado num 3. vetor. Imprima na tela o indice, os valores e
-    o resultado dos 6 elementos dos vetores.
-*/
-#define ex03
+#include <stdio.h>
+#define ex01
 
 #ifdef ex01
 
@@ -261,3 +241,33 @@ scanf(" %lf" , &vetD[i]);}
 }
 
 #endif // ex03
+
+
+#ifdef ex04
+
+/*4 - Receba via teclado dez valores inteiros e ordene por ordem crescente assim
+    que sao digitados. Guarde-os em um vetor. Mostre ao final os valores ordenados.
+*/
+
+main(){
+
+return 0;
+
+}
+
+#endif
+
+#ifdef ex05
+/* 5 - Defina 2 vetores bidimensionais do tipo inteiro de 2x3. Escreva um programa
+    que recebe os dados via teclado para esses 2 vetores. Usando o operador
+    subtracao "-", subtraia os elementos de mesmo indice dos 2 vetores
+    e guarde o resultado num 3. vetor. Imprima na tela o indice, os valores e
+    o resultado dos 6 elementos dos vetores. */
+
+main(){
+
+return 0;
+
+}
+
+#endif

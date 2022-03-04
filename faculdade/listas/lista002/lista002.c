@@ -1,5 +1,6 @@
+#include <stdio.h>
 
-#define ex02
+#define ex01
 
 #ifdef ex01
 /*

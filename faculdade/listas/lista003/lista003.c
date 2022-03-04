@@ -1,4 +1,6 @@
-#define ex03
+#include <stdio.h>
+
+#define ex01
 
 #ifdef ex01
 
