@@ -103,9 +103,9 @@ scanf("%d", &n1);
 printf("\n\tInforme o segundo valor: ");
 scanf("%d", &n2);
 
-n1 = n1 + n2; /* ex: n1(15) = 15 + 5 => 20 */
-n2 = n1 - n2; /* ex: n2(5) = 20 - 5 => 15 */
-n1 = n1 - n2; /* ex: n1(20) = 20 - 15 => 5 */
+n1 = n1 + n2;
+n2 = n1 - n2;
+n1 = n1 - n2;
 
 printf("\n\tPrimeiro valor passa a ser %d e o segundo valor passa a ser %d.\n" , n1, n2);
 
