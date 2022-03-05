@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define ex01
+#define ex05
 
 #ifdef ex01
 
@@ -232,10 +232,29 @@ printf("\nInforme 3 numeros para serem armazenados como numeros float.\n");
 for ( i = 0 ; i < 3; i++){
 printf("Informe um numero: ");
 scanf(" %f" , &vetF[i]);}
-printf("\nInforme 3 numeros para serem armazenados como numeros unsigned.\n");
+printf("\nInforme 3 numeros para serem armazenados como numeros double.\n");
 for ( i = 0 ; i < 3; i++){
 printf("Informe um numero: ");
 scanf(" %lf" , &vetD[i]);}
+
+
+printf("\n\n        10        20        30        40        50\n");
+printf("12345678901234567890123456789012345678901234567890\n");
+printf("  %1d" , vetI[0]);
+printf("                 %1ld" , vetL[0]);
+printf("                 %1ld\n" , vetU[0]);
+printf("            %.2f", vetF[0]);
+printf("              %.2lf\n", vetD[0]);
+printf("  %1d" , vetI[1]);
+printf("                 %1ld" , vetL[1]);
+printf("                 %1ld\n" , vetU[1]);
+printf("            %.2f", vetF[1]);
+printf("              %.2lf\n", vetD[1]);
+printf("  %1d" , vetI[2]);
+printf("                 %1ld" , vetL[2]);
+printf("                 %1ld\n" , vetU[2]);
+printf("            %.2f", vetF[2]);
+printf("              %.2lf\n", vetD[2]);
 
 
 }
@@ -264,9 +283,43 @@ return 0;
     e guarde o resultado num 3. vetor. Imprima na tela o indice, os valores e
     o resultado dos 6 elementos dos vetores. */
 
-main(){
 
-return 0;
+int vetA[2][3] = {0};
+int vetB[2][3] = {0};
+int vetC[1][3] = {0};
+int i, j;
+main(){
+    
+printf("Vetor A:\n");
+
+    for ( i=0; i<2; i++ )
+            for ( j=0; j<3; j++ )
+            {
+            printf ("Elemento [%d][%d]: ", i, j);
+            scanf ("%d", &vetA[ i ][ j ]);
+            }
+    
+printf("\nVetor B:\n");
+    
+    for ( i=0; i<2; i++ )
+            for ( j=0; j<3; j++ )
+            {
+            printf ("Elemento [%d][%d]: ", i, j);
+            scanf ("%d", &vetB[ i ][ j ]);
+            }
+
+printf("\nVetor C:\n");
+
+    for ( i=0; i<2; i++ )
+            for ( j=0; j<3; j++ )
+            {
+            vetC[i][j] = vetA[i][j] - vetB[i][j];
+            printf("Elemento [%d][%d]: %d - %d = %d\n" , i , j, vetA[i][j], vetB[i][j], vetC[i][j]);
+            }
+
+
+
+
 
 }
 
