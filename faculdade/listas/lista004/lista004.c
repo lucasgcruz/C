@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define ex05
+#define ex02
 
 #ifdef ex01
 
@@ -65,7 +65,7 @@ printf("\n\nFim do Programa.\n\n");
 #endif // ex01
 
 #ifdef ex02
-int vet[5][5], i, x;
+int vet[5][5], i, j,x;
 
 int main(){
 
@@ -78,118 +78,27 @@ printf("Neste programa montaremos uma matriz 5x5 com os valores que voce informa
 printf("Para isso voce tera que informar diversos numeros.\n\n");
 printf("\nInforme 5 numeros abaixo.\n");
 
-for (i = 0; i < 5; i++)
-{
+printf("Informe numeros para o vetor:\n");
 
-printf("Informe um numero [1/5]: ");
-scanf("%d", &vet[1][i]);
-
-}
-
-printf("\nInforme 5 numeros abaixo.\n");
-
-for (i = 0; i < 5; i++)
-{
-
-printf("Informe um numero [2/5]: ");
-scanf("%d", &vet[2][i]);
-
-}
-
-printf("\nInforme 5 numeros abaixo.\n");
-
-for (i = 0; i < 5; i++)
-{
-
-printf("Informe um numero [3/5]: ");
-scanf("%d", &vet[3][i]);
-
-}
-
-printf("\nInforme 5 numeros abaixo.\n");
-
-for (i = 0; i < 5; i++)
-{
-
-printf("Informe um numero [4/5]: ");
-scanf("%d", &vet[4][i]);
-
-}
-
-printf("\nInforme 5 numeros abaixo.\n");
-
-for (i = 0; i < 5; i++)
-{
-
-printf("Informe um numero [5/5]: ");
-scanf("%d", &vet[5][i]);
-
-}
+    for ( i=0; i<5; i++ )
+            for ( j=0; j<5; j++ )
+            {
+            printf ("Elemento [%d][%d]: ", i, j);
+            scanf ("%d", &vet[ i ][ j ]);
+            }
 
 printf("\nInforme qual valor voce deseja encontrar nessa matriz, caso o valor nao seja encontrado lhe informaremos: ");
 scanf("%d", &x);
 
-for (i = 0; i < 5; i++)
-{
+    for ( i=0; i<5; i++ ){
+        for ( j=0; j<5; j++ )
+        {
+        if (vet[i][j] == x){
+        printf("%d encontrado na posicao [%d][%d]." , x , i, j);
+        printf("\nFim do programa.\n\n");
+        return 0;
+        }}}
 
-if (vet[1][i] == x){
-    printf("%d encontrado na posicao [1]-[%d]." , x , i+1);
-    printf("\nFim do programa.\n\n");
-    return 0;
-}
-
-
-}
-
-for (i = 0; i < 5; i++)
-{
-
-if (vet[2][i] == x){
-    printf("%d encontrado na posicao [2]-[%d]." , x , i+1);
-    printf("\nFim do programa.\n\n");
-    return 0;
-}
-
-
-}
-
-for (i = 0; i < 5; i++)
-{
-
-if (vet[3][i] == x){
-    printf("%d encontrado na posicao [3]-[%d]." , x , i+1);
-    printf("\nFim do programa.\n\n");
-    return 0;
-}
-
-
-}
-
-for (i = 0; i < 5; i++)
-{
-
-if (vet[4][i] == x){
-    printf("%d encontrado na posicao [4]-[%d]." , x , i+1);
-    printf("\nFim do programa.\n\n");
-    return 0;
-}
-
-
-}
-
-for (i = 0; i < 5; i++)
-{
-
-if (vet[5][i] == x){
-    printf("%d encontrado na posicao [5]-[%d]." , x , i+1);
-    printf("\nFim do programa.\n\n");
-    return 0;
-
-}
-
-
-
-}
 
 printf("Numero nao encontrado, fim do programa.\n\n");
 
