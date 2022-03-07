@@ -1,5 +1,7 @@
 #include <stdio.h>
-#define ex02
+#define ex04
+
+
 
 #ifdef ex01
 
@@ -118,11 +120,11 @@ printf("Numero nao encontrado, fim do programa.\n\n");
       int                 long                unsigned
                 float               double                  */
 
-int vetI[3]={0}, i=0;
-long vetL[3]={0};
-unsigned vetU[3]={0};
-float vetF[3]={0};
-double vetD[3]={0};
+int vetI[3], i=0;
+long vetL[3];
+unsigned vetU[3];
+float vetF[3];
+double vetD[3];
 main(){
 
 printf("Informe 3 numeros para serem armazenados como numeros int.\n");
@@ -149,19 +151,19 @@ scanf(" %lf" , &vetD[i]);}
 
 printf("\n\n        10        20        30        40        50\n");
 printf("12345678901234567890123456789012345678901234567890\n");
-printf("  %1d" , vetI[0]);
-printf("                 %1ld" , vetL[0]);
-printf("                 %1ld\n" , vetU[0]);
+printf("  %d" , vetI[0]);
+printf("                 %ld" , vetL[0]);
+printf("                 %ld\n" , vetU[0]);
 printf("            %.2f", vetF[0]);
 printf("              %.2lf\n", vetD[0]);
-printf("  %1d" , vetI[1]);
-printf("                 %1ld" , vetL[1]);
-printf("                 %1ld\n" , vetU[1]);
+printf("  %d" , vetI[1]);
+printf("                 %ld" , vetL[1]);
+printf("                 %ld\n" , vetU[1]);
 printf("            %.2f", vetF[1]);
 printf("              %.2lf\n", vetD[1]);
-printf("  %1d" , vetI[2]);
-printf("                 %1ld" , vetL[2]);
-printf("                 %1ld\n" , vetU[2]);
+printf("  %d" , vetI[2]);
+printf("                 %ld" , vetL[2]);
+printf("                 %ld\n" , vetU[2]);
 printf("            %.2f", vetF[2]);
 printf("              %.2lf\n", vetD[2]);
 
