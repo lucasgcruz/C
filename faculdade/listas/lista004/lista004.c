@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define ex04
+#define ex03
 
 
 
@@ -130,23 +130,23 @@ main(){
 printf("Informe 3 numeros para serem armazenados como numeros int.\n");
 for ( i = 0 ; i < 3; i++){
 printf("Informe um numero: ");
-scanf(" %d" , &vetI[i]);}
+scanf("%d" , &vetI[i]);}
 printf("\nInforme 3 numeros para serem armazenados como numeros long.\n");
 for ( i = 0 ; i < 3; i++){
 printf("Informe um numero: ");
-scanf(" %ld" , &vetL[i]);}
+scanf("%ld" , &vetL[i]);}
 printf("\nInforme 3 numeros para serem armazenados como numeros unsigned.\n");
 for ( i = 0 ; i < 3; i++){
 printf("Informe um numero: ");
-scanf(" %u" , &vetU[i]);}
+scanf("%u" , &vetU[i]);}
 printf("\nInforme 3 numeros para serem armazenados como numeros float.\n");
 for ( i = 0 ; i < 3; i++){
 printf("Informe um numero: ");
-scanf(" %f" , &vetF[i]);}
+scanf("%f" , &vetF[i]);}
 printf("\nInforme 3 numeros para serem armazenados como numeros double.\n");
 for ( i = 0 ; i < 3; i++){
 printf("Informe um numero: ");
-scanf(" %lf" , &vetD[i]);}
+scanf("%lf" , &vetD[i]);}
 
 
 printf("\n\n        10        20        30        40        50\n");
