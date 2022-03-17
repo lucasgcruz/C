@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define ex03
+#define ex04
 
 
 
@@ -179,9 +179,36 @@ printf("              %.2lf\n", vetD[2]);
     que sao digitados. Guarde-os em um vetor. Mostre ao final os valores ordenados.
 */
 
-main(){
+main ()
+{
+   // ordenar vetor //
 
-return 0;
+   int vet [4];
+   int i,j,c,aux;
+   for (i=0;i<4;i++)
+   {
+       printf ("digite um numero:\n ");
+       scanf ("%d", &vet[i]);
+   }
+   for (i=0;i<3;i++)
+   {
+       for (j=i+1;j<4;j++)
+       {
+          if (vet[i]>vet[j])
+          {
+              aux = vet[i];
+              vet [i] = vet [j];
+              vet [j] = aux;
+          }
+       }
+   }
+   for ( i=0;i<4;i++)
+   {
+       printf ("%d", vet[i]);
+   }
+
+
+
 
 }
 
