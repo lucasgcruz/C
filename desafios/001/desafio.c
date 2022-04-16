@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 char nome_musica1[20];
 char nome_musica2[20];
 char nome_musica3[20];
@@ -149,22 +150,22 @@ if (vf==0){printf("\nMusica nao encontrada.\n");} // caso o valor não se altere
 
 pesquisaAutor(){
 printf("\nPesquisa de Autor\n");
-char p[1];
+char p;
 printf("\nInforme a primeira letra do autor: ");
 scanf("%s" , &p);
 int vf=0; // inicia como não localizada
 
-if (p[0] == nome_autor1[0]){
+if (p == nome_autor1[0]){
 printf("\nAutor encontrado na posicao 1: %s\n" , nome_autor1);
 vf=1; // caso localizada o valor se altera
 }
 
-if (p[0] == nome_autor2[0]){
+if (p == nome_autor2[0]){
 printf("\nAutor encontrado na posicao 2: %s\n" , nome_autor2);
 vf=1; 
 }
 
-if (p[0] == nome_autor3[0]){
+if (p == nome_autor3[0]){
 printf("\nAutor encontrado na posicao 3: %s\n" , nome_autor3);
 vf=1; 
 }
